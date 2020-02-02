@@ -81,6 +81,7 @@
     <Compile Include="Handlers\RmnSyHandler.cs" />
     <Compile Include="Handlers\SdRmnHandler.cs" />
     <Compile Include="Handlers\SdRmnSyHandler.cs" />
+    <Compile Include="Handlers\SdSmHandler.cs" />
     <Compile Include="Handlers\SdSmSyHandler.cs" />
     <Compile Include="Handlers\SmSdHandler.cs" />
     <Compile Include="Handlers\SmSdSyHandler.cs" />

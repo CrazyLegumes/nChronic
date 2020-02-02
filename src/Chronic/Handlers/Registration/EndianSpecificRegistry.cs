@@ -27,7 +27,21 @@ namespace Chronic.Handlers
                         .Required<ScalarYear>()
                         .Optional<SeparatorAt>()
                         .Optional(HandlerType.Time)
-                        .Using<SdSmSyHandler>()
+                        .Using<SdSmSyHandler>(),
+
+                    Handle
+                      .Required<ScalarMonth>()
+                      .Required<SeparatorDate>()
+                      .Required<ScalarDay>()
+                      .Optional(HandlerType.Time)
+                      .Using<SmSdHandler>(),
+
+                    Handle
+                      .Required<ScalarDay>()
+                      .Required<SeparatorDate>()
+                      .Required<ScalarMonth>()
+                      .Optional(HandlerType.Time)
+                      .Using<SdSmHandler>(),
                 };
 
             switch (precedence)
